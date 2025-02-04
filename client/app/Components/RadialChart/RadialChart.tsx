@@ -104,10 +104,11 @@ function RadialChart() {
       </CardContent>
       <CardFooter className="flex-col gap-2 text-sm">
         <div className="flex items-center gap-2 font-medium leading-none">
-          Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
+           Task completion improved by 12% this month{" "}
+           <TrendingUp className="h-4 w-4" />
         </div>
         <div className="leading-none text-muted-foreground">
-          Showing total visitors for the last 6 months
+        Analysis based on tasks completed in the last 30 days.  
         </div>
       </CardFooter>
     </Card>
