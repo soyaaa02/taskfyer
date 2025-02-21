@@ -1,6 +1,5 @@
-export const instagram = <i className="fa-brands fa-instagram"></i>
-export const twitter = <i className="fa-brands fa-twitter"></i>
-export const youtube = <i className="fa-brands fa-youtube"></i>
+export const github = <i className="fa-brands fa-github"></i>
+export const star = <i className="fas fa-star"></i>;
 export const trash = <i className="fa-solid fa-trash"></i>
 export const edit = <i className="fa-solid fa-pen-to-square"></i>
 export const check = <i className="fa-solid fa-check"></i>
