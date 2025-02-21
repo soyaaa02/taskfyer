@@ -18,10 +18,10 @@ export const registerUser = asyncHandler(async (req, res) => {
   }
 
   // check password length
-  if (password.length < 8) {
+  if (password.length < 6) {
     return res
       .status(400)
-      .json({ message: "Password must be at least 8 characters" });
+      .json({ message: "Password must be at least 6 characters" });
   }
 
   // check if user already exists
@@ -48,7 +48,7 @@ export const registerUser = asyncHandler(async (req, res) => {
     httpOnly: true,
     maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
     sameSite: "none", // cross-site access --> allow all third-party cookies
-    secure: true,
+    secure: false,
   });
 
   if (user) {
