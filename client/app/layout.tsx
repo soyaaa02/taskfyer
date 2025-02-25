@@ -34,7 +34,6 @@ export default function RootLayout({
           referrerPolicy="no-referrer" 
         />
       </head>
-      
       <body className={inter.className}>
         <UserProvider>
           <Toaster position="top-center" />

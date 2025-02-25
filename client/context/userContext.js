@@ -84,9 +84,8 @@ export const UserContextProvider = ({ children }) => {
        router.push("/");
       } catch (error) {
         console.log("Error logging in user", error);
-        toast.error(error.response.data.message);
       }
-    };
+};
 
   // get user Looged in Status
   const userLoginStatus = async () => {

@@ -9,7 +9,6 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { container, item } from "@/utils/animation";
 
-
 export default function Home() {
   useRedirect("/login");
 

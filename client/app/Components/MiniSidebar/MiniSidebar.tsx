@@ -10,7 +10,6 @@ import { usePathname } from 'next/navigation';
 import React from 'react'
 
 function MiniSidebar() {
-
     const pathname = usePathname();
 
     const getStrokeColor = (link: string) => {
@@ -20,7 +19,7 @@ function MiniSidebar() {
         {
             icon: <IconGrid strokeColor={getStrokeColor("/all")} />,
             title: "All",
-            link: "/all",
+            link: "/",
         },
         {
             icon: <IconFileCheck strokeColor={getStrokeColor("/completed")} />,
@@ -40,7 +39,6 @@ function MiniSidebar() {
         <div className="basis-[5rem] flex flex-col bg-yellow-500">
           {/* Sidebar Header */}
           <div className="flex items-center justify-center h-[5rem]">
-            MiniSidebar
           </div>
     
           {/* Navigation Items */}
@@ -62,7 +60,6 @@ function MiniSidebar() {
                 <button className="w-12 h-15 flex justify-center items-center border-2 border-[#EB4E31] p-2 rounded-full">
                     <IconDeleteAll strokeColor="#EB4E31" />
                 </button>
-
             </div>
           </div>
         </div>
