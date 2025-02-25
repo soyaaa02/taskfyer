@@ -1,4 +1,3 @@
-"use client";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState, useContext } from "react";
@@ -81,13 +80,13 @@ export const UserContextProvider = ({ children }) => {
       // refresh the user details
       await getUser(); // fetch before redirecting
 
-      // push user to the dashboard page
-      router.push("/");
-    } catch (error) {
-      console.log("Error logging in user", error);
-      toast.error(error.response.data.message);
-    }
-  };
+       // push user to the dashboard page
+       router.push("/");
+      } catch (error) {
+        console.log("Error logging in user", error);
+        toast.error(error.response.data.message);
+      }
+    };
 
   // get user Looged in Status
   const userLoginStatus = async () => {
